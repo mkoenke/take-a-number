@@ -15,6 +15,7 @@ const generateRandomNumber = (min, max, exclude) => {
 }
 
 const GameScreen = (props) => {
+  console.log(props)
   const [currentGuess, setCurrentGuess] = useState(
     generateRandomNumber(1, 100, props.userChoice)
   )
